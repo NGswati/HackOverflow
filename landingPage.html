@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TechOverflow</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Merriweather',serif;
+            margin: 0px;
+        }
+        .header{
+            background-image: url("img/header.png");
+            background-size: cover;
+            background-position: center;
+            padding: 100px;
+            text-align: center;
+            
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .product h3 {
+            margin-top: 30px;
+        }
+
+        .product .price {
+            color: cadetblue;
+            font-weight: bold;
+        }
+
+        .sort-List {
+            background-color: goldenrod;
+            color: #000;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+        .footer{
+            background-image: url("img/header.png");
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+            opacity: 60%;
+            
+        }
+        .copyright{
+            color: #eaf6f6;
+            font-size: 0.75rem;
+            padding: 20px 0;
+        }
+        .hr{
+            border: hidden; 
+        }
+    </style>
+</head>
+<link rel="icon" href="favicon.ico">
+
+<body>
+    <div class="header">
+        <h1 class="head">Welcome to TechOverflow Website!</h1>
+    </div>
+    <hr class="hr">
+    <div class="container">    
+        <div class="product-grid">
+            <div class="product">
+                <img src="img/gpu1.png" alt="Product 1">
+                <h3>GPU MAG</h3>
+                <p class="price">₹20,000-₹70,000</p>
+                <button class="sort-List"  name="sort-List" ><a href='gpu1.html', target="_blank">See AI Preference List</a> </button>
+            </div>
+            <div class="product">
+                <img src="img/gpu2.png" alt="Product 2">
+                <h3>RTX 2080</h3>
+                <p class="price">₹40,000-₹70,000</p>
+                <button class="sort-List"  name="sort-List" href=""><a href='gpu1.html' , target="_blank">See AI Preference List</a></button>
+            </div>
+            <div class="product">
+                <img src="img/gpu3.png" alt="Product 2">
+                <h3>NVIDIA T4G</h3>
+                <p class="price">₹3,000-₹30,000</p>
+                <button class="sort-List"  name="sort-List" href=""  ><a href='gpu1.html' , target="_blank">See AI Preference List</a></button>
+            </div>
+            <div class="product">
+                <img src="img/ssd1.png" alt="Product 2">
+                <h3>2.5 SATA SSD</h3>
+                <p class="price">₹2,000-₹30,000</p>
+                <button class="sort-List" name="sort-List" href=""><a href='gpu1.html' , target="_blank">See AI Preference List</a></button>
+            </div>
+            <div class="product">
+                <img src="img/ssd2.png" alt="Product 2" >
+                <h3>NVMe SSD M2</h3>
+                <p class="price">₹5,000-₹45,000</p>
+                <button class="sort-List"  name="sort-List" href=""><a href='gpu1.html' , target="_blank">See AI Preference List</a></button>
+            </div>
+            <div class="product">
+                <img src="img/MackBook Air.png" alt="Product 2">
+                <h3>MackBook Air</h3>
+                <p class="price">₹60,000-₹1,00,000</p>
+                <button class="sort-List"  name="sort-List" href=""><a href='gpu1.html' , target="_blank">See AI Preference List</a></button>
+            </div>
+            <div class="product">
+                <img src="img/MackBook Pro.png" alt="Product 2">
+                <h3>MackBook Pro</h3>
+                <p class="price">₹70,000-₹1,10,000</p>
+                <button class="sort-List" name="sort-List" href=""><a href='gpu1.html' , target="_blank">See AI Preference List</a></button>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="footer">
+        <a href="">HOME</a>
+        <a href="https://github.com/NGswati/HackOverflow">Github Page</a>
+        <p class="copyright">© 2023 HackOverflow</p>
+    </div>
+</body>
+
+</html>
