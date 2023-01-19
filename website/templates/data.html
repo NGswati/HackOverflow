@@ -1,0 +1,37 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<table>
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>price</th>
+        <th>image</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      {% for row in data %}
+      <tr>
+        {% for item in row %}
+        <td>{{ item }}</td>
+        {% endfor %}
+      </tr>
+      <td><form action="{{url_for('cart')}}" method="POST">
+        <button class="sort-List"  name="sort-List"  , target="_blank">Add to cart</a></button>
+        </form></td>
+
+        <tr>
+          <td>
+            <img src='{{images_link[loop.index]}}' alt="not">       
+          </td>
+        </tr>
+  
+      {% endfor %}
+     
+      <tr>
+
+      </tr>
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+  
